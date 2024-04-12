@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techtonic E-Commerce</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+    <div class="top-banner">
+      5% OFF ALL PRODUCTS WITH CODE: TECH05
+    </div>
+    <div class="main-header">
+      <a href="index.html">
+        <img src="techtoniclogo.png" alt="Techtonic Logo" class="logo">
+      </a>
+      <input type="search" placeholder="Search..." class="search-bar">
+      <!-- Icon wrapper for better alignment -->
+      <div class="icon-wrapper">
+        <a href="basket.html">
+          <img src="basket-icon.png" alt="Basket" class="icon">
+        </a>
+        <a href="account.html">
+          <img src="account-icon.png" alt="Account" class="icon">
+        </a>
+      </div>
+    </div>
+    <nav class="toolbar">
+      <ul>
+        <li><a href="appliances.html">APPLIANCES</a></li>
+        <li><a href="tv-audio.html">TV & AUDIO</a></li>
+        <li><a href="computing.html">COMPUTING</a></li>
+        <li><a href="gaming.html">GAMING</a></li>
+        <li><a href="phones.html">PHONES</a></li>
+        <li><a href="bundles.html">BUNDLE OFFERS</a></li>
+        <li><a href="FAQs.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sign In Form -->
+  <div class="flex-container" id="sign-in-form">
+    <form action="login.php" method="post">
+      <!-- ...your existing sign-in form elements... -->
+      <div class="imgcontainer">
+        <img src="accounticon.png" alt="Avatar" class="avatar">
+      </div>
+ 
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <button type="button" class="signup-btn" onclick="showSignUpForm()">Sign Up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      </div>
+
+       <div class="container" style="background-color:#f1f1f100">
+        <button type="button" class="forgotbtn">Forgot password?</button>
+      </div>
+      
+    </form>
+  </div>
+
+  <!-- Sign Up Form -->
+  <div class="flex-container signup-flex-container" id="sign-up-form" style="display: none;">
+    <form id="signup-form" class="signup-form" action="register.php" method="post">
+      <h1 class="signuptext">Sign Up</h1>
+      <div id="error-message" style="color: red;"></div>
+
+      <label for="username"><b>Username/Email</b></label>
+      <input type="text" placeholder="Enter Username/Email" name="username" id="signUpUsername" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+      <label for="username-confirm"><b>Confirm Username/Email</b></label>
+      <input type="text" placeholder="Confirm Username/Email" name="username-confirm" id="signUpUsernameConfirm" required>
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phone" id="signUpPhone" required pattern="\d*">
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="signUpPassword" required>
+      <p id="password-conditions" style="font-size: 12px; border: none; color: red;">Password must be at least 8 characters, contain a number, an uppercase letter, and a lowercase letter.</p>
+
+      <label for="password-confirm"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="password-confirm" id="signUpPasswordConfirm" required>
+
+      <input type="submit" value="Create Account" class="signup-btn2">
+      <button type="button" onclick="showSignInForm()" class="signinbutton">Sign In</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#care">Care Info</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faqs">FAQ's</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#why-shop">Why Shop at Our Store</a></li>
+                <li><a href="#buying-guide">Rug Buying Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <!-- Replace with actual image paths -->
+                <a href="your-facebook-link"><img src="facebookicon.png" alt="Facebook"></a>
+                <a href="your-pinterest-link"><img src="pintresticon.png" alt="Pinterest"></a>
+                <a href="your-instagram-link"><img src="instaicon.png" alt="Instagram"></a>
+                <a href="your-youtube-link"><img src="youtubeicon.png" alt="Youtube"></a>
+                <a href="your-tiktok-link"><img src="tiktokicon.png" alt="Email"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#tos">Terms of Service</a></li>
+            <li><a href="#refund">Refund policy</a></li>
+        </ul>
+        <p>Copyright © 2024 Techtonic LTD</p>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+HTML
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cadce8;
+}
+
+.top-banner {
+    font-family: Arial, sans-serif;
+    background-color: rgb(17, 17, 17);
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 8px;
+    padding: 5px;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+}
+
+.main-header {
+    background-color: #246a92;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for alignment */
+    padding: 20px;
+}
+
+.logo {
+    width: 95px; /* Keep logo size unchanged */
+    margin-right: 10px; /* Pushes everything to the right of the logo to the end of the container */
+    margin-left: 60px; /* Adjust this value to move the logo a bit to the left */
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 60px; /* Increased space between icons */
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px; /* Increase this value to move icons away from the right edge */
+}
+
+
+.icon {
+    width: 40px; /* Reduced icon size */
+}
+
+.search-bar {
+    border-radius:7px;
+    width: 40%;
+    padding: 10px;
+}
+
+/* Existing styles for top-banner, main-header, etc. */
+
+.toolbar {
+    background-color: #194361;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.toolbar ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.toolbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.toolbar a {
+    display: block;
+    padding: 9px 0;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 10px; /* Reduced text size */
+    letter-spacing: 1.5px; /* Increased letter spacing */
+    transition: background-color 0.3s;
+}
+
+.toolbar a:hover {
+    background-color: #3d8eb9; /* Changed highlight color for better visibility */
+    color: #ffffff; /* Changed text color on hover for contrast */
+}
+  
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #f4f4f4; /* Adjust the background color as needed */
+}
+
+.service {
+    text-align: center;
+    flex-basis: 33.3333%; /* Split the width equally for 3 services */
+    padding: 12px 10px;
+}
+
+.service-icon {
+    width: 55px; /* Fixed size for the icon images */
+    height: 55px;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+/* Styles for the paragraphs could be adjusted as needed */
+.service p {
+    margin: 5px 0;
+}
+
+/* Media queries can be added for responsive adjustments */
+
+.bundles-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8db3d0; /* Blue background color, now acts as border */
+    padding: 40px 0; /* Adds blue border above and below content */
+}
+
+/* New wrapper class for content to apply the background and padding */
+.bundles-content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the wrapper fills the width */
+}
+
+.bundletitle {
+    color: #4d4d4d;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.bundledescription {
+    color: #515050;
+    font-size: 13px;
+    max-width: 80%; /* Adjust this value to control the width of the text block */
+    margin: 0 auto; /* This will center the text block if it's narrower than the container */
+    line-height: 2;
+}
+
+.bundles-text {
+    width: 50%;
+    text-align: center;
+    padding: 60px; /* Keeps the content height as is */
+    color: white;
+}
+
+.bundles-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bundles-image img {
+    max-width: 80%; /* Adjust the width as necessary, max-width for responsive design */
+    height: auto;
+}
+
+/* Add to your existing styles */
+.bundles-text {
+    color: white; /* No change needed here, your existing styles can remain */
+}
+
+.bundles-text {
+    /* other styles remain the same */
+    position: relative; /* Set position context for absolute positioning of the button */
+}
+
+/* Adjust .bundle-button for proper centering under the text */
+.bundle-button {
+    text-align: center; /* Centers the button */
+    padding-top: 20px; /* Adds space between the text and the button */
+    display: inline-block; /* Makes the link behave like a block element */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the font bold */
+    border-radius: 5px; /* Rounds the corners of the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 17px; /* Set the font size for the button text */
+    margin-top: 0px; /* Space above the button */
+    margin-bottom: 10px; /* Space below the button */
+    letter-spacing: 1.5px;
+}
+
+.bundle-link {
+    display: inline-block; /* Aligns the button to the center of the text block */
+    background-color: #347EA8; /* Use the exact color code from your design */
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    /* Other styles remain the same */
+}
+
+@media (max-width: 768px) {
+    .bundles-content-wrapper {
+        flex-direction: column;
+    }
+
+    .bundles-text,
+    .bundles-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .bundles-image img {
+        width: 60%; /* Adjust for smaller screens */
+    }
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #347ea8; /* Adjust the background color as needed */
+    color: #ffffff;
+}
+
+.section-title {
+  border: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.titletext {
+    font-size: 15px;
+    color: #ffffff;
+  }
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  border-radius:0px;
+  width: 80%;
+  margin: auto;
+  gap: 10px; 
+  padding: 80px;
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+.flex-item {
+  width: calc(50% - (20px + 10px));
+  margin: 10px; 
+  text-align: center;
+  background-color: rgb(141 179 208);
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius:7px;
+}
+
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 16px;
+  color: green;
+}
+
+  
+.product-catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #8c8c8c;
+}
+
+/* Start by defining the container that will hold the 'View More' button */
+.view-more-container {
+  width: 100%; /* Ensures the container spans the full width of the page */
+  text-align: center; /* Centers the button within the container */
+  margin: 20px 0; /* Adds some space before and after the container */
+}
+
+/* Now, style the 'View More' button itself */
+.view-more-button {
+  display: inline-block; /* Makes the link behave like a block element */
+  background-color: red; /* The desired button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Makes the font bold */
+  border-radius: 5px; /* Rounds the corners of the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 14px; /* Set the font size for the button text */
+  margin-top: 0px; /* Space above the button */
+  margin-bottom: 10px; /* Space below the button */
+  letter-spacing: 1.5px;
+}
+
+/
+.view-more-button:hover {
+  background-color: darkred; 
+}
+
+.product {
+    background-color: #b80f0f;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    padding: 20px;
+}
+
+.container2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #333;
+}
+
+#login-form, #sign-in-form, #sign-up-form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"], button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error-message {
+    color: red;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+
+#sign-up-password {
+    width: 210px; 
+}
+
+#password-toggle-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #333;
+    cursor: pointer;
+}
+}
+
+.container3 {
+    padding: 3em;
+    align-items: center;
+    background-color: #8db3d0;
+  }
+  
+  .about-section {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    color: #4e4e4e;
+    font-size: 28px;
+    margin-bottom: 0.5em;
+  }
+
+  .BundleHeader1 {
+    color: #4e4e4e;
+    font-size: 28px;
+    margin-bottom: 0.5em
+  }
+
+  .BundleHeader2 {
+    color: #3c3c3c;
+    font-size: 48px;
+    margin-bottom: 0.5em
+  }
+  
+  .BundleHeader3 {
+    color: #4e4e4e;
+    font-size: 20px;
+    margin-bottom: 0.5em
+  }
+
+  p {
+    color: #4e4e4e;
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  footer {
+    background-color: #245171;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Wrap the columns on smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: #e3dede;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #8d8b8b;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #e3dede;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    color: #c0b7b7;
+}

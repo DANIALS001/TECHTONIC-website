@@ -1,0 +1,341 @@
+HTML
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.top-banner {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+}
+
+
+.main-header {
+    background-color: #246a92;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.logo, .main-header img {
+    width: 85px; /* Adjust as needed */
+}
+
+
+.search-bar {
+    border-radius:7px;
+    width: 40%;
+    padding: 10px;
+}
+
+
+.toolbar {
+    background-color: #194361;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.toolbar a {
+    color: #f0f0f0;
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px #092d44;
+    padding: 0 10px;
+}
+
+
+.toolbar a:hover {
+  color: #1d8dcd; /* Change text color on hover */
+  transition: color 0.3s;
+}
+ 
+.section-title {
+  border: 0px;
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+
+
+/* Bordered form */
+form {
+    border-radius: 7px;
+    border: 3px solid #f1f1f100;
+    background-color: #cccccc;
+  }
+
+
+  .flex-container {
+    width: 60%; /* Sets the width of the flex container to 60% of its parent's width */
+    margin: 0 auto; /* Centers the container on the screen */
+    padding: 16px;
+    flex-grow: 1; /* Add this line */
+  }
+ 
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+   }
+ 
+
+  button {
+    background-color: #2bb80f;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.75;
+  }
+
+  .signinbutton {
+  background-color: #2d00cf; /* Unique color for Sign-Up button */
+  color: white;
+  padding: 14px 20px;
+  border: 17px solid #cccccc;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+  }
+
+
+  .signinbutton:hover {
+    opacity: 0.75;
+  }
+
+
+/* Additional styles specific to the Sign-Up form */
+.signup-flex-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 16px;
+  flex-grow: 1;
+}
+
+
+.signup-form input[type="text"], .signup-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 7px solid #cccccc;
+  box-sizing: border-box;
+}
+
+
+.signuptext {
+  font-size: 50px;
+  text-align: center;
+
+}
+
+
+.signup-form .signup-btn {
+  background-color: #2bb80f; /* Unique color for Sign-Up button */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 17px solid #cccccc;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.signup-form .signup-btn:hover {
+  opacity: 0.75;
+}
+
+
+/* You might need to adjust or add more specific styles based on the rest of your page's design */
+.signup-btn {
+  background-color: #2d00cf;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+  .signup-btn2 {
+    background-color: #11cf00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 17px solid #cccccc;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.signup-btn2:hover {
+  opacity: 0.75;
+}
+
+
+  .forgotbtn {
+    background-color: #ff0000; /* Red background */
+    color: white;
+    padding: 14px 20px;
+    margin: 4px 0;
+    margin-top: 2px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+  }
+ 
+
+  .forgotbtn:hover {
+    opacity: 0.75;
+  }
+ 
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+ 
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  
+  /* Avatar image */
+  img.avatar {
+    width: 150px; /* Increase the width as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image round, if desired */
+  }
+ 
+  /* You may remove the margin-top from the .container if it is not needed */
+  .container {
+    padding: 16px;
+    align-items: center;
+  }
+ 
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+ 
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .forgotbtn {
+      width: 100%;
+    }
+  }
+
+  footer {
+    background-color: #194361;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Wrap the columns on smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: #e3dede;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #8d8b8b;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #e3dede;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    color: #c0b7b7;
+}
+
+
+
+
